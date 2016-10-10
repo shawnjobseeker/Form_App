@@ -1,0 +1,514 @@
+<resources>
+    <string name="app_name">MySecondApp</string>
+    <string name="gender">Gender</string>
+    <string name="genderM">Male ♂</string>
+    <string name="genderF">Female ♀</string>
+    <string name="country">Country</string>
+    <string name="welcome">Welcome, %1$s!</string>
+    <!-- source: https://github.com/code-troopers/android-betterpickers/blob/master/sample/src/main/res/values/strings.xml-->
+    <string name="month_hint">Month (zero-indexed int)</string>
+    <string name="date_hint">Date (int)</string>
+    <string name="year_hint">Year (int)</string>
+    <string name="set">Set</string>
+
+    <string name="no_value">--</string>
+    <string name="calendar_date_picker_set">Set Date</string>
+    <string name="calendar_date_picker_result_values">%3$d/%2$d/%1$d</string>
+    <string name="radial_time_picker">Set Time</string>
+    <string name="radial_time_picker_result_value">%1$d:%2$d</string>
+    <string name="date_picker_set">Set Date</string>
+    <string name="date_picker_result_value">Year: %1$s\nMonth: %2$s\nDay: %3$s</string>
+    <string name="expiration_picker_set">Set Expiration</string>
+    <string name="expiration_picker_result_value">%1$s/%2$s</string>
+    <string name="hms_picker_set">Set HMS</string>
+    <string name="hms_picker_result_value_multiline">Hours: %1$s\nMinutes: %2$s\nSeconds: %3$s\nNegative : %4$b</string>
+    <string name="hms_picker_result_value_oneline">H:%1$s, M:%2$s, S:%3$s</string>
+    <string name="time_picker_set">Set Time</string>
+    <string name="time_picker_result_value">%1$s:%2$s</string>
+    <string name="timezone_picker_set">Set Time Zone</string>
+    <string name="recurrence_picker_set">Set Recurrence</string>
+    <string name="number_picker_set">Set Number</string>
+    <string name="number_picker_result_value">Number: %1$s\nDecimal: %2$s\nIs negative: %3$b\nFull number: %4$s</string>
+    <string name="colorprimary_text">Here is colorPrimary</string>
+
+    <string name="button_label_custom_ok">Okay</string>
+    <string name="button_label_custom_cancel">Nop</string>
+    <!-- derived from http://madskristensen.net/posts/files/countries.xml -->
+    <string-array name="countries">
+        <item iso="4" code="AF">Afghanistan</item>
+
+        <item iso="8" code="AL">Albania</item>
+
+        <item iso="12" code="DZ">Algeria</item>
+
+        <item iso="16" code="AS">American Samoa</item>
+
+        <item iso="20" code="AD">Andorra</item>
+
+        <item iso="24" code="AO">Angola</item>
+
+        <item iso="660" code="AI">Anguilla</item>
+
+        <item iso="10" code="AQ">Antarctica</item>
+
+        <item iso="28" code="AG">Antigua And Barbuda</item>
+
+        <item iso="32" code="AR">Argentina</item>
+
+        <item iso="51" code="AM">Armenia</item>
+
+        <item iso="533" code="AW">Aruba</item>
+
+        <item iso="36" code="AU">Australia</item>
+
+        <item iso="40" code="AT">Austria</item>
+
+        <item iso="31" code="AZ">Azerbaijan</item>
+
+        <item iso="44" code="BS">Bahamas</item>
+
+        <item iso="48" code="BH">Bahrain</item>
+
+        <item iso="50" code="BD">Bangladesh</item>
+
+        <item iso="52" code="BB">Barbados</item>
+
+        <item iso="112" code="BY">Belarus</item>
+
+        <item iso="56" code="BE">Belgium</item>
+
+        <item iso="84" code="BZ">Belize</item>
+
+        <item iso="204" code="BJ">Benin</item>
+
+        <item iso="60" code="BM">Bermuda</item>
+
+        <item iso="64" code="BT">Bhutan</item>
+
+        <item iso="68" code="BO">Bolivia</item>
+
+        <item iso="70" code="BA">Bosnia And Herzegovina</item>
+
+        <item iso="72" code="BW">Botswana</item>
+
+        <item iso="74" code="BV">Bouvet Island</item>
+
+        <item iso="76" code="BR">Brazil</item>
+
+        <item iso="86" code="IO">British Indian Ocean Territory</item>
+
+        <item iso="96" code="BN">Brunei Darussalam</item>
+
+        <item iso="100" code="BG">Bulgaria</item>
+
+        <item iso="854" code="BF">Burkina Faso</item>
+
+        <item iso="108" code="BI">Burundi</item>
+
+        <item iso="116" code="KH">Cambodia</item>
+
+        <item iso="120" code="CM">Cameroon</item>
+
+        <item iso="124" code="CA">Canada</item>
+
+        <item iso="132" code="CV">Cape Verde</item>
+
+        <item iso="136" code="KY">Cayman Islands</item>
+
+        <item iso="140" code="CF">Central African Republic</item>
+
+        <item iso="148" code="TD">Chad</item>
+
+        <item iso="152" code="CL">Chile</item>
+
+        <item iso="156" code="CN">China</item>
+
+        <item iso="162" code="CX">Christmas Island</item>
+
+        <item iso="166" code="CC">Cocos (Keeling) Islands</item>
+
+        <item iso="170" code="CO">Colombia</item>
+
+        <item iso="174" code="KM">Comoros</item>
+
+        <item iso="178" code="CG">Congo</item>
+
+        <item iso="184" code="CK">Cook Islands</item>
+
+        <item iso="188" code="CR">Costa Rica</item>
+
+        <item iso="384" code="CI">Cote D\&apos;Ivoire</item>
+
+        <item iso="191" code="HR">Croatia </item>
+
+        <item iso="192" code="CU">Cuba</item>
+
+        <item iso="196" code="CY">Cyprus</item>
+
+        <item iso="203" code="CZ">Czech Republic</item>
+
+        <item iso="208" code="DK">Denmark</item>
+
+        <item iso="262" code="DJ">Djibouti</item>
+
+        <item iso="212" code="DM">Dominica</item>
+
+        <item iso="214" code="DO">Dominican Republic</item>
+
+        <item iso="218" code="EC">Ecuador</item>
+
+        <item iso="818" code="EG">Egypt</item>
+
+        <item iso="222" code="SV">El Salvador</item>
+
+        <item iso="226" code="GQ">Equatorial Guinea</item>
+
+        <item iso="232" code="ER">Eritrea</item>
+
+        <item iso="233" code="EE">Estonia</item>
+
+        <item iso="210" code="ET">Ethiopia</item>
+
+        <item iso="238" code="FK">Falkland Islands (Malvinas)</item>
+
+        <item iso="234" code="FO">Faroe Islands</item>
+
+        <item iso="242" code="FJ">Fiji</item>
+
+        <item iso="246" code="FI">Finland</item>
+
+        <item iso="250" code="FR">France</item>
+
+        <item iso="249" code="FX">France, Metropolitan</item>
+
+        <item iso="254" code="GF">French Guiana</item>
+
+        <item iso="258" code="PF">French Polynesia</item>
+
+        <item iso="260" code="TF">French Southern Territories</item>
+
+        <item iso="266" code="GA">Gabon</item>
+
+        <item iso="270" code="GM">Gambia</item>
+
+        <item iso="268" code="GE">Georgia</item>
+
+        <item iso="276" code="DE">Germany</item>
+
+        <item iso="288" code="GH">Ghana</item>
+
+        <item iso="292" code="GI">Gibraltar</item>
+
+        <item iso="300" code="GR">Greece</item>
+
+        <item iso="304" code="GL">Greenland</item>
+
+        <item iso="308" code="GD">Grenada</item>
+
+        <item iso="312" code="GP">Guadeloupe</item>
+
+        <item iso="316" code="GU">Guam</item>
+
+        <item iso="320" code="GT">Guatemala</item>
+
+        <item iso="324" code="GN">Guinea</item>
+
+        <item iso="624" code="GW">Guinea-Bissau</item>
+
+        <item iso="328" code="GY">Guyana</item>
+
+        <item iso="332" code="HT">Haiti</item>
+
+        <item iso="334" code="HM">Heard Island &amp; Mcdonald Islands</item>
+
+        <item iso="340" code="HN">Honduras</item>
+
+        <item iso="344" code="HK">Hong Kong</item>
+
+        <item iso="348" code="HU">Hungary</item>
+
+        <item iso="352" code="IS">Iceland</item>
+
+        <item iso="356" code="IN">India</item>
+
+        <item iso="360" code="ID">Indonesia</item>
+
+        <item iso="364" code="IR">Iran, Islamic Republic Of</item>
+
+        <item iso="368" code="IQ">Iraq</item>
+
+        <item iso="372" code="IE">Ireland</item>
+
+        <item iso="376" code="IL">Israel</item>
+
+        <item iso="380" code="IT">Italy</item>
+
+        <item iso="388" code="JM">Jamaica</item>
+
+        <item iso="392" code="JP">Japan</item>
+
+        <item iso="400" code="JO">Jordan</item>
+
+        <item iso="398" code="KZ">Kazakhstan</item>
+
+        <item iso="404" code="KE">Kenya</item>
+
+        <item iso="296" code="KI">Kiribati</item>
+
+        <item iso="408" code="KP">Korea, Democratic People\&apos;s Republic Of</item>
+
+        <item iso="410" code="KR">Korea, Republic Of</item>
+
+        <item iso="414" code="KW">Kuwait</item>
+
+        <item iso="417" code="KG">Kyrgyzstan</item>
+
+        <item iso="418" code="LA">Lao People\&apos;s Democratic Republic</item>
+
+        <item iso="428" code="LV">Latvia</item>
+
+        <item iso="422" code="LB">Lebanon</item>
+
+        <item iso="426" code="LS">Lesotho</item>
+
+        <item iso="430" code="LR">Liberia</item>
+
+        <item iso="434" code="LY">Libya</item>
+
+        <item iso="438" code="LI">Liechtenstein</item>
+
+        <item iso="440" code="LT">Lithuania</item>
+
+        <item iso="442" code="LU">Luxembourg</item>
+
+        <item iso="446" code="MO">Macau</item>
+
+        <item iso="807" code="MK">Macedonia, The Former Yugoslav Republic Of</item>
+
+        <item iso="450" code="MG">Madagascar</item>
+
+        <item iso="454" code="MW">Malawi</item>
+
+        <item iso="458" code="MY">Malaysia</item>
+
+        <item iso="462" code="MV">Maldives</item>
+
+        <item iso="466" code="ML">Mali</item>
+
+        <item iso="470" code="MT">Malta</item>
+
+        <item iso="584" code="MH">Marshall Islands</item>
+
+        <item iso="474" code="MQ">Martinique</item>
+
+        <item iso="478" code="MR">Mauritania</item>
+
+        <item iso="480" code="MU">Mauritius</item>
+
+        <item iso="175" code="YT">Mayotte</item>
+
+        <item iso="484" code="MX">Mexico</item>
+
+        <item iso="583" code="FM">Micronesia, Federated States Of</item>
+
+        <item iso="498" code="MD">Moldova, Republic Of</item>
+
+        <item iso="492" code="MC">Monaco</item>
+
+        <item iso="496" code="MN">Mongolia</item>
+
+        <item iso="500" code="MS">Montserrat</item>
+
+        <item iso="504" code="MA">Morocco</item>
+
+        <item iso="508" code="MZ">Mozambique</item>
+
+        <item iso="104" code="MM">Myanmar</item>
+
+        <item iso="516" code="NA">Namibia</item>
+
+        <item iso="520" code="NR">Nauru</item>
+
+        <item iso="524" code="NP">Nepal</item>
+
+        <item iso="528" code="NL">Netherlands</item>
+
+        <item iso="530" code="AN">Netherlands Antilles</item>
+
+        <item iso="540" code="NC">New Caledonia</item>
+
+        <item iso="554" code="NZ">New Zealand</item>
+
+        <item iso="558" code="NI">Nicaragua</item>
+
+        <item iso="562" code="NE">Niger</item>
+
+        <item iso="566" code="NG">Nigeria</item>
+
+        <item iso="570" code="NU">Niue</item>
+
+        <item iso="574" code="NF">Norfolk Island</item>
+
+        <item iso="580" code="MP">Northern Mariana Islands</item>
+
+        <item iso="578" code="NO">Norway</item>
+
+        <item iso="512" code="OM">Oman</item>
+
+        <item iso="586" code="PK">Pakistan</item>
+
+        <item iso="585" code="PW">Palau</item>
+
+        <item iso="591" code="PA">Panama</item>
+
+        <item iso="598" code="PG">Papua New Guinea</item>
+
+        <item iso="600" code="PY">Paraguay</item>
+
+        <item iso="604" code="PE">Peru</item>
+
+        <item iso="608" code="PH">Philippines</item>
+
+        <item iso="612" code="PN">Pitcairn</item>
+
+        <item iso="616" code="PL">Poland</item>
+
+        <item iso="620" code="PT">Portugal</item>
+
+        <item iso="630" code="PR">Puerto Rico</item>
+
+        <item iso="634" code="QA">Qatar</item>
+
+        <item iso="638" code="RE">Reunion</item>
+
+        <item iso="642" code="RO">Romania</item>
+
+        <item iso="643" code="RU">Russian Federation</item>
+
+        <item iso="646" code="RW">Rwanda</item>
+
+        <item iso="654" code="SH">Saint Helena</item>
+
+        <item iso="659" code="KN">Saint Kitts And Nevis</item>
+
+        <item iso="662" code="LC">Saint Lucia</item>
+
+        <item iso="666" code="PM">Saint Pierre And Miquelon</item>
+
+        <item iso="670" code="VC">Saint Vincent And The Grenadines</item>
+
+        <item iso="882" code="WS">Samoa</item>
+
+        <item iso="674" code="SM">San Marino</item>
+
+        <item iso="678" code="ST">Sao Tome And Principe</item>
+
+        <item iso="682" code="SA">Saudi Arabia</item>
+
+        <item iso="686" code="SN">Senegal</item>
+
+        <item iso="690" code="SC">Seychelles</item>
+
+        <item iso="694" code="SL">Sierra Leone</item>
+
+        <item iso="702" code="SG">Singapore</item>
+
+        <item iso="703" code="SK">Slovakia (Slovak Republic)</item>
+
+        <item iso="705" code="SI">Slovenia</item>
+
+        <item iso="90" code="SB">Solomon Islands</item>
+
+        <item iso="706" code="SO">Somalia</item>
+
+        <item iso="710" code="ZA">South Africa</item>
+
+        <item iso="724" code="ES">Spain</item>
+
+        <item iso="144" code="LK">Sri Lanka</item>
+
+        <item iso="736" code="SD">Sudan</item>
+
+        <item iso="740" code="SR">Suriname</item>
+
+        <item iso="744" code="SJ">Svalbard And Jan Mayen Islands</item>
+
+        <item iso="748" code="SZ">Swaziland</item>
+
+        <item iso="752" code="SE">Sweden</item>
+
+        <item iso="756" code="CH">Switzerland</item>
+
+        <item iso="760" code="SY">Syrian Arab Republic</item>
+
+        <item iso="158" code="TW">Taiwan, Province Of China</item>
+
+        <item iso="762" code="TJ">Tajikistan</item>
+
+        <item iso="834" code="TZ">Tanzania, United Republic Of</item>
+
+        <item iso="764" code="TH">Thailand</item>
+
+        <item iso="768" code="TG">Togo</item>
+
+        <item iso="772" code="TK">Tokelau</item>
+
+        <item iso="776" code="TO">Tonga</item>
+
+        <item iso="780" code="TT">Trinidad And Tobago</item>
+
+        <item iso="788" code="TN">Tunisia</item>
+
+        <item iso="792" code="TR">Turkey</item>
+
+        <item iso="795" code="TM">Turkmenistan</item>
+
+        <item iso="796" code="TC">Turks And Caicos Islands</item>
+
+        <item iso="798" code="TV">Tuvalu</item>
+
+        <item iso="800" code="UG">Uganda</item>
+
+        <item iso="804" code="UA">Ukraine</item>
+
+        <item iso="784" code="AE">United Arab Emirates</item>
+
+        <item iso="826" code="GB">United Kingdom</item>
+
+        <item iso="840" code="US">United States</item>
+
+        <item iso="581" code="UM">United States Minor Outlying Islands</item>
+
+        <item iso="858" code="UY">Uruguay</item>
+
+        <item iso="860" code="UZ">Uzbekistan</item>
+
+        <item iso="548" code="VU">Vanuatu</item>
+
+        <item iso="336" code="VA">Vatican City State (Holy See)</item>
+
+        <item iso="862" code="VE">Venezuela</item>
+
+        <item iso="704" code="VN">Viet Nam</item>
+
+        <item iso="92" code="VG">Virgin Islands (British)</item>
+
+        <item iso="850" code="VI">Virgin Islands (U.S.)</item>
+
+        <item iso="876" code="WF">Wallis And Futuna Islands</item>
+
+        <item iso="732" code="EH">Western Sahara</item>
+
+        <item iso="887" code="YE">Yemen</item>
+
+        <item iso="688" code="RS">Serbia</item>
+        <item iso="828" code="SS">South Sudan</item>
+        <item iso="499" code="RS">Montenegro</item>
+        <item iso="180" code="CD">Congo, Democratic Republic Of</item>
+
+        <item iso="894" code="ZM">Zambia</item>
+
+        <item iso="716" code="ZW">Zimbabwe</item>
+
+    </string-array>
+</resources>
