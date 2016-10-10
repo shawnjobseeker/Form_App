@@ -15,6 +15,7 @@ import io.realm.Realm;
 import io.realm.RealmQuery;
 import io.realm.RealmResults;
 import io.realm.exceptions.RealmException;
+import io.realm.exceptions.RealmPrimaryKeyConstraintException;
 
 /**
  * Created by Shawn Li on 10/8/2016.
@@ -59,17 +60,19 @@ public class LoginActivity extends AppCompatActivity {
         }
         return false;
     }
-    private void addNew(String userName, String password, boolean isAdmin) {
+    private boolean addNew(String userName, String password, boolean isAdmin) {
         try {
             realm.beginTransaction();
             realm.copyToRealm(new UserAuth(userName, password, isAdmin));
             realm.commitTransaction();
-        } catch (RealmException re) {
+            return true;
+        } catch (RealmException | RealmPrimaryKeyConstraintException re ) {
             Toast.makeText(this, "Username already taken!", Toast.LENGTH_SHORT).show();
+            return false;
         }
     }
     private void authStart(String userName, boolean isAdmin) {
-        Intent intent = new Intent(getBaseContext(), Welcome.class);
+        Intent intent = new Intent(getBaseContext(), WelcomeActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra("userName", userName);
         intent.putExtra("isAdmin", isAdmin);
@@ -83,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(getBaseContext(), "Invalid credentials", Toast.LENGTH_SHORT).show();
         }
     void register(String userName, String password, boolean isAdmin) {
-           addNew(userName, password, isAdmin);
+           if (addNew(userName, password, isAdmin))
             authStart(userName, isAdmin);
     }
 }

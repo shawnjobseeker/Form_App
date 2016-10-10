@@ -132,6 +132,7 @@ public class SecondActivity extends AppCompatActivity {
     }
     @Override
     public void onDestroy() {
+        super.onDestroy();
         helper.close();
     }
 

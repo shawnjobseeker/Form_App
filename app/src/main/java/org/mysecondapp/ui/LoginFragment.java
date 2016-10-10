@@ -42,8 +42,12 @@ public class LoginFragment extends Fragment implements View.OnClickListener, Com
         super.onActivityCreated(savedInstanceState);
         if (savedInstanceState != null) {
             // Restore last state for checked position.
-           userEdit.setText(savedInstanceState.get("userName").toString());
-            pwdEdit.setText(savedInstanceState.get("password").toString());
+            Object user = savedInstanceState.get("userName");
+            Object pwd = savedInstanceState.get("password");
+            if (user != null)
+           userEdit.setText(user.toString());
+            if (pwd != null)
+            pwdEdit.setText(pwd.toString());
         }
     }
     @Override
