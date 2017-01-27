@@ -33,8 +33,8 @@ public class RegisterFragment extends Fragment implements View.OnClickListener{
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.register_screen, container, false);
-        userEdit = (EditText) view.findViewById(R.id.registerPassword);
-        pwdEdit = (EditText) view.findViewById(R.id.registerUser);
+        userEdit = (EditText) view.findViewById(R.id.registerUser);
+        pwdEdit = (EditText) view.findViewById(R.id.registerPassword);
         radioGroup = (RadioGroup) view.findViewById(R.id.radioGroup);
         Button registerButton = (Button)view.findViewById(R.id.registerBtn);
         registerButton.setOnClickListener(this);

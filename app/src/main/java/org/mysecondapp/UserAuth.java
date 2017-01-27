@@ -37,12 +37,4 @@ public class UserAuth extends RealmObject {
     public boolean authenticate(String password) {
         return this.zxcvbNm.equals(password);
     }
-    public boolean setCredentials(String oldPassword, String newPassword) {
-        if (authenticate(oldPassword)) {
-            this.zxcvbNm = newPassword;
-            return true;
-        }
-        else
-            return false;
-    }
 }

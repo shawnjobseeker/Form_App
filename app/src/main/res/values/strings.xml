@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MySecondApp</string>
+    <string name="app_name">Form App</string>
     <string name="gender">Gender</string>
     <string name="genderM">Male ♂</string>
     <string name="genderF">Female ♀</string>

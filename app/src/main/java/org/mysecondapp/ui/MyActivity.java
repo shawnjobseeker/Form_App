@@ -29,6 +29,7 @@ public class MyActivity extends AppCompatActivity {
 
     static final int REQUEST_IMAGE_CAPTURE = 2;
     private boolean isNewRecord;
+    private int id;
     private UserData intentPass;
     private Bitmap pic;
     private boolean userIsAdmin;
@@ -54,7 +55,8 @@ public class MyActivity extends AppCompatActivity {
         isNewRecord = intent.getBooleanExtra("new", true);
         userIsAdmin = intent.getBooleanExtra("isAdmin", true);
         if (intentPass != null ) {
-
+            if (!isNewRecord)
+                id = intentPass.getID();
             ((EditText)findViewById(R.id.nameEdit)).setText(intentPass.getName());
             ((EditText)findViewById(R.id.dobEdit)).setText(intentPass.getDob());
            ((EditText)findViewById(R.id.addressEdit)).setText(intentPass.getAddress());
@@ -133,7 +135,10 @@ public class MyActivity extends AppCompatActivity {
                     String phone = ((EditText) findViewById(R.id.phoneEdit)).getText().toString();
                     String country = ((Spinner) findViewById(R.id.spinner)).getSelectedItem().toString();
                     String gender = (((RadioGroup) findViewById(R.id.radioGroup)).getCheckedRadioButtonId() == R.id.male) ? "Male" : "Female";
-                    data.setAll(name, phone, email, address, dob, pic, country, gender);
+                    if (isNewRecord)
+                        data.setAll(name, phone, email, address, dob, pic, country, gender);
+                    else
+                        data.setAll(id, name, phone, email, address, dob, pic, country, gender);
                     intent.putExtra("userData", data);
                     intent.putExtra("new", isNewRecord);
                     intent.putExtra("isAdmin", userIsAdmin);

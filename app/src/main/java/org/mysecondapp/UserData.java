@@ -35,6 +35,7 @@ public class UserData implements Parcelable {
 
     }
     public UserData(Parcel in) {
+        ID = in.readInt();
         name = in.readString();
         phone = in.readString();
         email = in.readString();
@@ -50,7 +51,7 @@ public class UserData implements Parcelable {
         return name + " " + (gender.startsWith("M") ? "♂" : "♀");
     }
     public String detailedToString() {
-        return "Name: " + name + "\nDate of Birth: " + dob + "\nAddress: " + address + "\nE-Mail: " + email + "\nPhone Number: " + phone + "\nCountry of Birth: " + country + "\n" + gender;
+        return "Date of Birth: " + dob + "\nAddress: " + address + "\nE-Mail: " + email + "\nPhone Number: " + phone + "\nCountry of Birth: " + country + "\n" + gender;
     }
     public int getID(){
         return this.ID;
@@ -114,6 +115,10 @@ return this.phone;
         this.gender = gender;
         this.country = country;
     }
+    public void setAll(int id, String name, String phone, String email, String address, String dob, Bitmap pic, String country, String gender ) {
+        this.ID = id;
+        setAll(name, phone, email, address, dob, pic, country, gender);
+    }
     public void setAll(String name, String phone, String email, String address, String dob, Bitmap pic, String country, String gender ){
         this.name = name;
         this.dob = dob;
@@ -127,6 +132,7 @@ return this.phone;
     }
 
     public void writeToParcel(Parcel out, int flags) {
+        out.writeInt(ID);
         out.writeString(name);
         out.writeString(phone);
         out.writeString(email);

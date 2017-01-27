@@ -67,7 +67,9 @@ public class LoginActivity extends AppCompatActivity {
             realm.commitTransaction();
             return true;
         } catch (RealmException | RealmPrimaryKeyConstraintException re ) {
+            re.printStackTrace();
             Toast.makeText(this, "Username already taken!", Toast.LENGTH_SHORT).show();
+            realm.commitTransaction();
             return false;
         }
     }
